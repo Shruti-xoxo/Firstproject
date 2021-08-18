@@ -1,0 +1,442 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f0f0f0;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fas,
+.far {
+  margin: 0 1rem;
+  color: #929292;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-nav--left {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  flex: 1;
+}
+
+.first-nav--left li {
+  padding: 1rem 2rem;
+  transition: background-color 150ms ease-out;
+}
+
+.first-nav--left li:hover {
+  background-color: #f0f8ff;
+}
+
+.first-nav--right {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+
+.first-nav--right li {
+  padding: 1rem 2rem;
+  transition: background-color 150ms ease-out;
+}
+
+.first-nav--right li:hover {
+  background-color: #f0f8ff;
+}
+
+.second-nav {
+  display: flex;
+  align-items: center;
+  min-width: 100vw;
+}
+
+.logo {
+  padding: 2rem;
+  object-fit: cover;
+}
+
+.second-nav--middle {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 7rem;
+}
+
+.second-nav--middle li {
+  padding: 1rem 2rem;
+  transition: background-color 150ms ease-out;
+}
+
+.second-nav--middle li:hover {
+  background-color: #f0f8ff;
+}
+
+.redeem {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 2rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-out;
+}
+
+.redeem:hover {
+  color: #ffffff;
+  background-color: #c7417b;
+  border: none;
+  font-weight: 500;
+}
+
+.border {
+  width: 100vw;
+  background-color: #c7417b;
+  height: 0.6rem;
+}
+
+.highlight {
+  color: #c7417b;
+}
+
+main h4 {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+main h3 {
+  padding: 1rem 2rem;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categories {
+  padding: 1rem 2rem;
+  border: 1px solid #f0f0f0;
+  width: 50%;
+  overflow-y: auto;
+  height: 350px;
+}
+
+.categories-text {
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.cb {
+  margin-top: 1.5rem;
+}
+
+.cb label {
+  font-size: 1.4rem;
+  color: #707070;
+  cursor: pointer;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 5rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 5px 5px #f0f8ff;
+  min-width: 200;
+}
+
+.card-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .card-text {
+  margin: 1rem 0;
+  min-width: 175px;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-body .drop-down {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  align-self: center;
+  min-width: 175px;
+}
+
+select {
+  padding: 1rem 0.7rem;
+  margin-right: 0.5rem;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.atc {
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  width: 175px;
+  align-self: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #707070;
+  transition: background-color 100ms;
+}
+
+.atc:hover {
+  color: #ffffff;
+  background-color: #c7417b;
+  border: none;
+  font-weight: 500;
+}
+
+.htext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+.htext2 {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.p2,
+.p3,
+.p4,
+.p5 {
+  margin-left: 2rem;
+}
+
+.pleft {
+  transform: rotate(90deg);
+  color: #707070;
+}
+
+.pright {
+  transform: rotate(-90deg);
+  color: #707070;
+}
+
+.previous,
+.next {
+  font-weight: 550;
+  font-size: 1.4rem;
+  margin: 0 1.25rem;
+}
+
+.page {
+  font-weight: 550;
+  color: #707070;
+}
+
+.page-highlight {
+  color: #c7417b;
+}
+
+footer {
+  display: flex;
+  margin: 2rem;
+  background-color: #f6f8fa;
+  padding-top: 4rem;
+}
+
+.footer-1,
+.footer-2,
+.footer-3,
+.footer-4,
+.footer-5,
+.footer-6 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.footer-6 {
+  flex: 1.75;
+}
+
+.f1-header,
+.f2-header,
+.f3-header,
+.f4-header,
+.f5-header,
+.f6-header {
+  margin-bottom: 2rem;
+}
+
+.f1-content a,
+.f2-content a,
+.f3-content a,
+.f4-content a,
+.f5-content a,
+.f6-content a {
+  font-size: 1.4rem;
+  color: #707070;
+}
+
+.f1-content,
+.f2-content,
+.f3-content,
+.f4-content,
+.f5-content,
+.f6-content {
+  margin-bottom: 1rem;
+}
+
+.footer-6 .footer-logo {
+  width: 30%;
+  object-fit: cover;
+}
+
+.f-text {
+  font-size: 1.4rem;
+  color: #707070;
+  margin: 3rem 0;
+}
+
+.fab {
+  margin: 0 1rem;
+  color: #707070;
+}
+
+.bottom-m {
+  width: 100vw;
+  height: 1px;
+  background-color: #d1d1d1;
+}
+
+.bottom-t {
+  margin: 2rem 2rem;
+  display: flex;
+  position: relative;
+}
+
+.bt-1,
+.bt-2,
+.bt-3 {
+  font-size: 1.4rem;
+  color: #707070;
+  margin-right: 2rem;
+}
+
+.bt-4 {
+  font-size: 1.4rem;
+  color: #707070;
+  position: absolute;
+  right: 0;
+}
+
+.footer-all {
+  background-color: #f6f8fa;
+}
+
+@media screen and (max-width: 991px) {
+  .card-list {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card,
+  .card-image,
+  .drop-down,
+  .card-text {
+    min-width: 250px;
+  }
+}
